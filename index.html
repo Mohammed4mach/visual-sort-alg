@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sorting Techniques</title>	
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main class="flex flex-center flex-column">
+		<h1>Sorting Techniques</h1>
+
+		<div>
+			<div class="cards-container flex flex-center">
+				<div class="cards" contenteditable>
+					18
+				</div>
+				<div class="cards" contenteditable>
+					45
+				</div>
+				<div class="cards" contenteditable>
+					83
+				</div>
+				<div class="cards" contenteditable>
+					17
+				</div>
+				<div class="cards" contenteditable>
+					15
+				</div>
+				<div class="cards" contenteditable>
+					94
+				</div>
+				<div class="cards" contenteditable>
+					70
+				</div>
+				<div class="cards" contenteditable>
+					81
+				</div>
+				<div class="cards" contenteditable>
+					46
+				</div>
+			</div>
+			<div class="btn-randomize" onclick="randomize()">?</div>
+		</div>
+		<div>Note: Do not press enter after editing the card</div>
+
+		<div class="controllers">
+			<div class="controllers_cnfrm flex flex-center">
+				<button id="btn-sort">Sort</button>
+			</div>
+
+			<div class="controllers_choice">
+				<div class="flex flex-center">
+					<input onclick="changeTechnique(this)" id="radio-selection" value="selection" type="radio" name="srt-technique" required>
+					<label for="radio-selection">Selection Sort</label>
+				</div>  
+				<div class="flex flex-center">  
+					<input onclick="changeTechnique(this)" id="radio-bubble" value="bubble" type="radio" name="srt-technique" required>
+					<label for="radio-bubble">Bubble Sort</label>
+				</div>  
+				<div class="flex flex-center">  
+					<input onclick="changeTechnique(this)" id="radio-insertion" value="insertion" type="radio" name="srt-technique" required>
+					<label for="radio-insertion">Insertion Sort</label>
+				</div>  
+				<div class="flex flex-center">  
+					<input onclick="changeTechnique(this)" id="radio-merge" value="merge" type="radio" name="srt-technique" required>
+					<label for="radio-merge">Merge Sort</label>
+				</div>  
+				<div class="flex flex-center">  
+					<input onclick="changeTechnique(this)" id="radio-quick" value="quick" type="radio" name="srt-technique" required>
+					<label for="radio-quick">Quick Sort</label>
+				 </div>  
+				<div class="flex flex-center">  
+					<input onclick="changeTechnique(this)" id="radio-bucket" value="bucket" type="radio" name="srt-technique" required>
+					<label for="radio-bucket">Bucket Sort</label>
+				 </div>  
+				<div class="flex flex-center">  
+					<input onclick="changeTechnique(this)" class="flex flex-center" id="radio-count" value="count" type="radio" name="srt-technique" required>
+					<label for="radio-count">Count Sort</label>
+				 </div>   
+				<div class="flex flex-center">  
+					<input onclick="changeTechnique(this)" id="radio-radix" value="radix" type="radio" name="srt-technique" required>
+					<label for="radio-radix">Radix Sort</label>
+				</div>
+			</div> 
+		</div>
+	</main>
+
+	<footer class="flex">
+		<div>Steps: <span id="steps-count">0</span></div>
+	</footer>
+
+<!-- Logic Script -->	
+	<script src="main.js"></script>
+	</body>
+</html>
+

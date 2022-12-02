@@ -1,0 +1,110 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body
+{
+	min-height: 100vh;
+	background-color: #EEE;
+}
+main
+{
+	min-height: 100vh;
+}
+h1
+{
+	margin: 15px 0 80px;
+	color: #19a187;
+}
+
+/* Utility */
+.flex
+{
+	display: flex;
+}
+.flex-center
+{
+	justify-content: center;
+	align-items: center;	
+}
+.flex-column
+{
+	flex-direction: column
+}
+
+/* Cards Styling */
+.cards
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80px;
+	height: 80px;
+	padding: 15px;
+	margin: 7px;
+	font-size: 23px;
+	font-weight: bold;
+	color: aliceblue;
+	border-radius: 10px;
+	background-color: #19a187;
+	overflow: hidden;
+}
+.btn-randomize
+{
+	position: absolute;
+	top: 32%;
+	right: 13%;
+	font-size: 24px;
+	color: #04F;
+	cursor: pointer;
+}
+
+.controllers
+{
+	margin-top: 50px;
+	
+}
+.controllers_cnfrm button
+{
+	width: 90px;
+	padding: 10px;
+	margin-bottom: 15px;
+	font-size: 20px;
+	font-weight: bold;
+	color: aliceblue;
+	background-color: #19a187;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.controllers_cnfrm button:hover { background-color: #2ab298 }
+.controllers_choice
+{
+	display: grid;
+	grid-template-columns: auto auto;
+}
+.controllers_choice input { display: none }
+.controllers_choice label
+{
+	margin: 20px;
+	cursor: pointer;
+}
+.controllers_choice input:checked + label
+{
+	font-weight: bold;
+	color: #19a187;
+}
+
+footer
+{
+	width: 100%;
+	position: absolute;
+	bottom: 5px;
+}
+footer > div
+{
+	margin-left: 10px;
+}
+
